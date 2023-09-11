@@ -1,0 +1,267 @@
+@import 'src/scss/basics/_variables';
+
+.main {
+	display: flex;
+	margin-top: 250px;
+
+	position: relative;
+	overflow: hidden;
+}
+.blob1 {
+	width: 20%;
+	position: absolute;
+	left: 20%;
+	top: 15%;
+	filter: blur(7rem);
+	opacity: 0.7;
+}
+.blob2 {
+	width: 15%;
+	position: absolute;
+	left: 25%;
+	top: -50%;
+	filter: blur(7rem);
+	opacity: 0.7;
+}
+.blob3 {
+	width: 35%;
+	position: absolute;
+	left: 0%;
+	top: 37%;
+	filter: blur(7rem);
+	opacity: 0.7;
+}
+
+.titleBlock {
+	position: absolute;
+	top: 45px;
+	left: 40px;
+	display: flex;
+	align-items: center;
+
+	width: 310px;
+	height: 70px;
+
+	border-radius: 10px;
+	background: $green;
+
+	img {
+		margin-left: 23px;
+	}
+	span {
+		margin-left: 25px;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 500;
+	}
+}
+
+.stats {
+	display: flex;
+	width: 100%;
+	margin-top: 340px;
+	margin-left: 6%;
+}
+
+.femaleStat {
+	position: relative;
+	width: 51px;
+	height: 273px;
+	flex-shrink: 0;
+	margin-top: 239px;
+
+	border-radius: 5px;
+	background: $green;
+
+	&::before {
+		content: '38';
+
+		position: absolute;
+		top: -25px;
+		left: 15px;
+
+		color: #000;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	&::after {
+		content: 'Ж';
+
+		position: absolute;
+		bottom: -28px;
+		left: 15px;
+
+		color: #000;
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+
+.maleStat {
+	position: relative;
+	width: 51px;
+	height: 512px;
+	flex-shrink: 0;
+	margin-left: 21px;
+
+	border-radius: 5px;
+	border: 2px solid var(--unnamed, #21b972);
+	background: #fff;
+
+	&::before {
+		content: '103';
+
+		position: absolute;
+		top: -25px;
+		left: 10px;
+
+		color: #000;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	&::after {
+		content: 'М';
+
+		position: absolute;
+		bottom: -28px;
+		left: 15px;
+
+		color: #000;
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+
+.ageStat {
+	position: relative;
+	width: 286px;
+	height: 286px;
+	margin-left: 72px;
+
+	border-radius: 15px;
+	border: 2px solid $green;
+	background: #fff;
+	z-index: 1;
+
+	&::before {
+		content: 'возраст кандидата';
+
+		position: absolute;
+		top: -25px;
+
+		color: #000;
+		font-size: 20px;
+		font-weight: 400;
+	}
+
+	img {
+		object-fit: cover;
+		margin-left: -3px;
+		margin-top: 110px;
+		width: 102%;
+
+		@media (max-width: 1170px) {
+			display: none;
+		}
+	}
+
+	.low {
+		position: absolute;
+		bottom: 85px;
+		left: 26px;
+
+		font-size: 16px;
+		font-weight: 500;
+
+		b {
+			font-size: 54px;
+			font-weight: 500;
+		}
+	}
+
+	.high {
+		position: absolute;
+		bottom: 170px;
+		right: 10px;
+
+		font-size: 16px;
+		font-weight: 500;
+
+		b {
+			font-size: 54px;
+			font-weight: 500;
+		}
+	}
+}
+
+.residentStat {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 238px;
+	height: 286px;
+	margin-left: 35px;
+
+	@media (max-width: 820px) {
+		margin-left: -250px;
+		margin-top: 320px;
+	}
+	border-radius: 15px;
+	border: 2px solid $green;
+	background: #fff;
+	z-index: 1;
+	&::before {
+		content: 'резиденты';
+
+		position: absolute;
+		top: -25px;
+
+		color: #000;
+		font-size: 20px;
+		font-weight: 400;
+	}
+
+	b {
+		font-size: 54px;
+		font-weight: 500;
+	}
+
+	span {
+		margin-top: 38px;
+		margin-left: 29px;
+	}
+}
+
+.gradientPhotoBlock {
+	position: relative;
+	width: 35%;
+	height: 763px;
+	margin-top: -218px;
+	margin-left: 15%;
+
+	border-radius: 25px;
+	background: var(
+		--3-color-gradient,
+		linear-gradient(90deg, #faed00 0%, #00d900 51.44%, #21ba5d 100%)
+	);
+
+	.arrow {
+		position: absolute;
+		left: -40%;
+		top: 10%;
+	}
+	.photo {
+		position: absolute;
+		left: -50%;
+		bottom: 0;
+		width: 150%;
+		max-width: 900px;
+		min-width: 500px;
+	}
+
+	@media (max-width: 1170px) {
+		display: none;
+	}
+}

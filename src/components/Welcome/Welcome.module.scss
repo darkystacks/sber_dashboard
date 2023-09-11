@@ -1,0 +1,49 @@
+.main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.titleBlock {
+	display: flex;
+	width: 500px;
+	min-width: 50%;
+	max-width: 100%;
+	margin-top: 150px;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+
+	h1 {
+		position: absolute;
+		top: 50px;
+		color: #000;
+		font-size: 152px;
+		font-weight: 500;
+		line-height: 0.8;
+		text-transform: uppercase;
+		z-index: 1;
+	}
+
+	img {
+		width: min(283px, 70%);
+		height: 596px;
+		flex-shrink: 0;
+		transition: all 0.5s ease-in-out;
+
+		&:hover {
+			transform: translateX(-6%) rotate(3deg);
+		}
+	}
+}
+
+.arrow {
+	margin-top: 115px;
+	cursor: pointer;
+	width: 43px;
+	transition: all 0.5s ease-in-out;
+
+	&:hover {
+		transform: translateY(30%);
+	}
+}

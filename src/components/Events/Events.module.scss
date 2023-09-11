@@ -1,0 +1,72 @@
+.main {
+	height: 600px;
+	position: relative;
+}
+
+.titleBlock {
+	display: flex;
+	margin-top: 250px;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 85px;
+	h1 {
+		text-align: center;
+		font-size: 54px;
+		font-weight: 500;
+	}
+
+	h2 {
+		text-align: center;
+		font-size: 32px;
+		font-weight: 400;
+	}
+}
+
+.sliderImg {
+	width: 20vw;
+	min-width: 250px;
+	border-radius: 10px;
+	z-index: 1;
+}
+
+.sliderText {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 58%;
+	height: 10%;
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.blob1 {
+	width: 20%;
+	position: absolute;
+	right: 0%;
+	top: 10%;
+	filter: blur(7rem);
+	opacity: 0.7;
+}
+.blob2 {
+	width: 15%;
+	position: absolute;
+	right: 5%;
+	top: 0%;
+	filter: blur(7rem);
+	opacity: 0.7;
+}
+.blob3 {
+	width: 35%;
+	position: absolute;
+	right: 8%;
+	top: 37%;
+	filter: blur(7rem);
+	opacity: 0.7;
+}

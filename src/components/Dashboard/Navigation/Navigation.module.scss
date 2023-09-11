@@ -1,0 +1,50 @@
+@import 'src/scss/basics/_variables';
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	margin-top: 70px;
+
+	@media (max-width: 900px) {
+		margin-inline: auto;
+	}
+}
+
+.navBlock {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	margin-left: 25px;
+	padding: 17.5px;
+	border-radius: 10px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+
+	&:hover {
+		filter: drop-shadow((10px 10px 4px #d4d8dd)); //#9ba2aa #c0c4c8
+		transform: translateY(-10%);
+	}
+
+	div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 35px;
+		height: 35px;
+		flex-shrink: 0;
+
+		border-radius: 5px;
+		background: #21b972;
+	}
+
+	span {
+		margin-left: 12px;
+		white-space: nowrap;
+		color: #000;
+		font-family: Inter;
+		font-size: 16px;
+		font-weight: 500;
+	}
+}

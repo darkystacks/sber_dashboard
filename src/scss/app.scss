@@ -1,0 +1,22 @@
+@import 'basics/variables';
+@import 'basics/normalize';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+	font-family: 'Inter', sans-serif;
+	scroll-behavior: smooth;
+	user-select: none;
+}
+
+span,
+h1,
+h2,
+h3,
+b,
+li {
+	color: #000;
+}
+
+body {
+	background-color: $background;
+}

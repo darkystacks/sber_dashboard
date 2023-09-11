@@ -1,0 +1,145 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	margin-top: 175px;
+	margin-inline: auto;
+	width: 88%;
+}
+
+.title {
+	border-bottom: 1px solid #4cd0b8;
+	margin-top: 28px;
+	padding-bottom: 12px;
+	b {
+		font-size: 54px;
+		font-weight: 700;
+	}
+	span {
+		font-size: 20px;
+		font-weight: 400;
+	}
+}
+
+.cityList {
+	display: flex;
+	margin-top: 12px;
+
+	.cityListItem {
+		text-transform: uppercase;
+		margin-right: 3.3vw;
+		white-space: nowrap;
+
+		color: #676767;
+		font-size: 1.3vw;
+		font-weight: 400;
+
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			color: #2d2d2d;
+			filter: drop-shadow(1px 2px 1px #cbcaca);
+		}
+	}
+}
+
+.mapBlock {
+	display: flex;
+	margin-inline: auto;
+
+	position: relative;
+
+	background-image: url('/src/assets/photos/map.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	width: 73vw;
+	height: calc(73vw * 0.69);
+
+	margin-top: 30px;
+
+	.mainPoint {
+		width: 3.3%;
+		position: absolute;
+		top: 85.3%;
+		left: 12.5%;
+	}
+	.point {
+		position: absolute;
+		width: 1%;
+		top: 60%;
+		left: 30%;
+
+		fill: #fff;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.point1 {
+		//москва
+		top: 69%;
+		left: 10.9%;
+	}
+
+	.point2 {
+		//питер
+		top: 64%;
+		left: 7.5%;
+	}
+
+	.point3 {
+		//екб
+		top: 67.3%;
+		left: 28.4%;
+	}
+
+	.point4 {
+		//омск
+		top: 69.2%;
+		left: 33.5%;
+	}
+
+	.point5 {
+		//пермь
+		top: 65%;
+		left: 23%;
+	}
+
+	.point6 {
+		//самара
+		top: 74.3%;
+		left: 21%;
+	}
+
+	.point7 {
+		//томск
+		top: 67.8%;
+		left: 40%;
+	}
+
+	.point8 {
+		//оренбург
+		top: 78.8%;
+		left: 22.2%;
+	}
+
+	.point9 {
+		//уфа
+		top: 70.6%;
+		left: 22%;
+	}
+
+	.pointHovered {
+		width: 1%;
+		animation: pulse 1s infinite;
+
+		@keyframes pulse {
+			0% {
+				width: 1%;
+			}
+			50% {
+				width: 2%;
+				transform: translateX(-30%) translateY(-30%);
+			}
+		}
+	}
+}

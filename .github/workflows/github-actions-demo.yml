@@ -1,0 +1,10 @@
+name: GitHub pipline main # name 
+on: [push] # every push
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    # strategy:
+    #   matrix: 
+    # wait readme for version js and python
+    steps:
+      - run: echo "SALAM - now we without fullstack"
