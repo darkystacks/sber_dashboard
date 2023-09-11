@@ -17,7 +17,6 @@ Not mobile-friendly yet because of features of the release platform
 ## Contributors.
 
 - [Darky](https://github.com/darkystacks) (Frontend dev)
-- [vnJ](https://github.com/vnj64) (Backend dev)
 
 ## Project setup.
 
