@@ -22,15 +22,10 @@ Not mobile-friendly yet because of features of the release platform
 
 ```
 # Clone repository.
-git clone git@github.com:vnj64/dashboard_office.git
+git clone https://github.com/darkystacks/sber_dashboard
 
 # Move to the root.
-cd dashboard_office/
-
-# There should be the following versions
-Node - v18.6.1
-npm - v9.5.1
-npx - v9.5.1
+cd sber_dashboard/
 
 # Install packages
 npm i
@@ -39,6 +34,3 @@ npm i
 npm run dev
 ```
 
-## Issues.
-
-If you find any error, please write to [issue](https://github.com/vnj64/dashboard_office/issues). Thank you!
